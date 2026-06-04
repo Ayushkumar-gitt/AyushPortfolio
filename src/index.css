@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-anton: 'Anton', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-background: var(--background);
+  --color-background-light: var(--background-light);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+@layer base {
+  :root {
+    --background: #212121;
+    --foreground: #dedede;
+    --muted-foreground: #a1a1aa;
+    --primary: #ff9d40;
+    --primary-foreground: #212121;
+    --primary-hover: #e68a39;
+    --background-light: #303030;
+  }
+
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    cursor: none; /* Hide default cursor */
+  }
+
+  a, button {
+    cursor: none; /* Hide default cursor */
+  }
+}
+
+@keyframes snow {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+.animate-snow {
+  animation: snow linear infinite;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-up-and-fade {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.page-transition {
+  pointer-events: none;
+}
+
+.svg-arrow {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
