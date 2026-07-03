@@ -35,7 +35,7 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="group h-12 px-8 inline-flex justify-center items-center gap-2 text-lg uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary-hover mt-9" 
-            href="/Ayush Kumar Resume.pdf" 
+            href="https://drive.google.com/file/d/1l53PX9fcUK_fzXCIQUaQ7IB5kqpTZswh/view?usp=sharing" 
             download 
             target="_blank" 
             rel="noopener noreferrer"
